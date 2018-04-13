@@ -25,6 +25,6 @@ ADD zero_downtime_reload.sh /opt/nginx/sbin/zero_downtime_reload.sh
 
 WORKDIR /
 
-EXPOSE 80 443
+EXPOSE 3306 8126
 
 CMD ["/opt/nginx/sbin/nginx", "-g", "daemon off;"]
