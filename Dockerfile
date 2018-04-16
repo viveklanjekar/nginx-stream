@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Anders Åslund <anders.aslund@teknoir.se>
+MAINTAINER Vivek Lanjekar <vivek.lanjekar@gmail.com>
 
 RUN apt-get update && apt-get -y upgrade && \
     apt-get install -y wget libpcre3-dev build-essential libssl-dev && \
