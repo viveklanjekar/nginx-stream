@@ -1,8 +1,8 @@
-FROM debian:jessie
+FROM debian:stretch
 MAINTAINER Vivek Lanjekar <vivek.lanjekar@gmail.com>
 
 RUN apt-get update && apt-get -y upgrade && \
-    apt-get install -y wget libpcre3-dev build-essential libssl-dev && \
+    apt-get install -y wget libpcre3-dev build-essential libssl-dev zlib1g-dev && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt
